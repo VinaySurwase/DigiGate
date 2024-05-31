@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "923442798961",
+    "project_id": "digigate-c3962",
+    "storage_bucket": "digigate-c3962.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923442798961:android:1f81e3afa635703145d6d0",
+        "android_client_info": {
+          "package_name": "com.example.digigate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8mdctfEb9J79xSqagkfsEtoerOc3f_0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
