@@ -26,3 +26,9 @@ git clone https://github.com/bsoc-bitbyte/busify-android.git
 4. Build and run the app on your connected device using Android Studio.
 
 Note: Make sure you have the necessary dependencies and Android SDK installed to build and run Android apps.
+
+The [CONTRIBUTING.md](https://github.com/bsoc-bitbyte/DigiGate/blob/main/CONTRIBUTING.md) contains the step-by-step procedure for contributing to this project.
+
+## Design
+[Figma Design](https://www.figma.com/design/kKT5N7cP7FYCwyMUMGOoaa/DigiGate?node-id=0-1&t=GMU0St3twTVuzb60-0)
+
