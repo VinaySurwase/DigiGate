@@ -5,6 +5,193 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".ui.home.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="600"
+            android:text="DigiGate"
+            android:textSize="45sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/signuppage"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/whiteblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topContainer"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="600"
+            android:text="Sign Up"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inputbg"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="400"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="   Name"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inputbg"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="400"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="   Roll Number"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inputbg"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="400"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="   Phone Number"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputbg"
+                android:drawableStart="@drawable/ic_house"
+                android:hint="   Hostel"
+                android:fontFamily="@font/epilogue_regular"
+                android:textFontWeight="400"
+                android:inputType="text"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputbg"
+                android:drawableStart="@drawable/ic_book"
+                android:hint="   Room No."
+                android:fontFamily="@font/epilogue_regular"
+                android:textFontWeight="400"
+                android:inputType="text"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inputbg"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="   Email"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="400"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/inputbg"
+            android:drawableStart="@drawable/ic_key"
+            android:hint="     Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/epilogue_regular"
+            android:textFontWeight="400"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/whiteblock"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_button"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:text="Sign up"
+        android:fontFamily="@font/epilogue_regular"
+        android:textFontWeight="600"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/whiteblock"
+        app:layout_constraintTop_toBottomOf="@+id/bottomContainer"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:text="Already have an account? Login"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/epilogue_regular"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="116dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
