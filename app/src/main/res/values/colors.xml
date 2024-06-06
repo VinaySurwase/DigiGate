@@ -2,7 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dark_purple_gradient">#332FD4</color>
-    <color name="light_purple_gradient">#7A78E3</color>
+    <color name="dull_black">#171A1F</color>
+    <color name="dull_white">#DEE1E6</color>
+    <color name="light_gray">#EDF1FF</color>
+    <color name="dark_gray">#9095A0</color>
+    <color name="dark_purple">#3531D5</color>
+    <color name="light_purple">#7977E3</color>
     <color name="Inputbackground">#edf1ff</color>
 </resources>
