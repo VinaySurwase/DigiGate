@@ -8,11 +8,10 @@
     tools:context=".ui.user.UserQRCodeActivity">
 
     <TextView
-        android:id="@+id/tv_dashboard"
+        android:id="@+id/tvDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/epilogue_bold"
         android:text="@string/dashboard"
         android:textColor="@color/black"
@@ -22,30 +21,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_user_qr"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnUserQR"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/btn_custom_user_qrcode_layout"
-        android:backgroundTint="#E05858"
+        android:backgroundTint="@color/red"
+        android:gravity="center"
         android:text="A"
         android:textColor="@color/white"
         android:textSize="25sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_dashboard"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvDashboard"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_dashboard" />
+        app:layout_constraintStart_toEndOf="@+id/tvDashboard" />
 
     <View
-        android:id="@+id/line"
+        android:id="@+id/vLine"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="24dp"
         android:background="@color/blue"
-        app:layout_constraintTop_toBottomOf="@+id/tv_dashboard" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDashboard" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvYourQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -55,32 +55,32 @@
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line" />
+        app:layout_constraintTop_toBottomOf="@+id/vLine" />
 
     <TextView
-        android:id="@+id/qr_instruction"
+        android:id="@+id/tvQRInstruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/inter_regular"
         android:gravity="center"
         android:text="@string/qr_instruction"
-        android:textColor="#9095A0"
+        android:textColor="@color/grey"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvYourQR" />
 
     <ImageView
-        android:id="@+id/iv_qr_code"
-        android:layout_width="168dp"
-        android:layout_height="163dp"
+        android:id="@+id/ivQRCode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/qr_code"
         android:src="@drawable/qr_code"
-        android:contentDescription="QR Code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_instruction" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQRInstruction" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
@@ -89,14 +89,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_qr_code">
+        app:layout_constraintTop_toBottomOf="@+id/ivQRCode">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tv_name"
+                android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -108,48 +108,48 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_temp_name"
+                android:id="@+id/tvTempName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/inter_regular"
                 android:text="@string/temp_name"
-                android:textColor="#4C4C4C"
+                android:textColor="@color/grey"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintEnd_toStartOf="@+id/glReference"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
             <TextView
-                android:id="@+id/tv_roll_no"
+                android:id="@+id/tvRollNo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:fontFamily="@font/inter_medium"
                 android:text="@string/roll_no"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:layout_marginStart="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline"
-                app:layout_constraintTop_toTopOf="@+id/tv_name" />
+                app:layout_constraintStart_toStartOf="@+id/glReference"
+                app:layout_constraintTop_toTopOf="@+id/tvName" />
 
             <TextView
-                android:id="@+id/tv_temp_roll_no"
+                android:id="@+id/tvTempRollNo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/inter_regular"
                 android:text="@string/temp_roll_no"
-                android:textColor="#4C4C4C"
+                android:textColor="@color/grey"
                 android:textSize="20sp"
-                android:layout_marginStart="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline"
-                app:layout_constraintTop_toBottomOf="@+id/tv_roll_no" />
+                app:layout_constraintStart_toStartOf="@+id/glReference"
+                app:layout_constraintTop_toBottomOf="@+id/tvRollNo" />
 
             <TextView
-                android:id="@+id/tv_hostel"
+                android:id="@+id/tvHostel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
@@ -157,49 +157,49 @@
                 android:text="@string/Hostel"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="@+id/tv_name"
-                app:layout_constraintTop_toBottomOf="@+id/tv_temp_name" />
+                app:layout_constraintStart_toStartOf="@+id/tvName"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempName" />
 
             <TextView
-                android:id="@+id/tv_temp_address"
+                android:id="@+id/tvTempAddress"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="12dp"
                 android:fontFamily="@font/inter_regular"
                 android:text="@string/temp_address"
-                android:textColor="#4C4C4C"
+                android:textColor="@color/grey"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintEnd_toStartOf="@+id/glReference"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_hostel" />
+                app:layout_constraintTop_toBottomOf="@+id/tvHostel" />
 
             <TextView
-                android:id="@+id/tv_room_no"
+                android:id="@+id/tvRoomNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_medium"
                 android:text="@string/Room_no"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="@+id/tv_roll_no"
-                app:layout_constraintTop_toTopOf="@+id/tv_hostel" />
+                app:layout_constraintStart_toStartOf="@+id/tvRollNo"
+                app:layout_constraintTop_toTopOf="@+id/tvHostel" />
 
             <TextView
-                android:id="@+id/tv_temp_room_no"
+                android:id="@+id/tvTempRoomNo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:fontFamily="@font/inter_regular"
                 android:text="@string/temp_room_no"
-                android:textColor="#4C4C4C"
+                android:textColor="@color/grey"
                 android:textSize="20sp"
-                android:layout_marginStart="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tv_temp_address"
-                app:layout_constraintTop_toTopOf="@+id/tv_temp_address" />
+                app:layout_constraintStart_toEndOf="@+id/tvTempAddress"
+                app:layout_constraintTop_toTopOf="@+id/tvTempAddress" />
 
             <TextView
-                android:id="@+id/tv_phone_no"
+                android:id="@+id/tvPhoneNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
@@ -207,29 +207,29 @@
                 android:text="@string/phone_no"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="@+id/tv_hostel"
-                app:layout_constraintTop_toBottomOf="@+id/tv_temp_address" />
+                app:layout_constraintStart_toStartOf="@+id/tvHostel"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempAddress" />
 
             <TextView
-                android:id="@+id/tv_temp_no"
+                android:id="@+id/tvTempNo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/inter_regular"
                 android:text="@string/temp_no"
-                android:textColor="#4C4C4C"
+                android:textColor="@color/grey"
                 android:textSize="20sp"
-                android:layout_marginStart="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_phone_no" />
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneNo" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline"
+                android:id="@+id/glReference"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_end="159dp"/>
+                app:layout_constraintGuide_end="159dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
