@@ -5,6 +5,134 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.admin.AdminQRScanner">
+    android:background="@android:color/white"
+    tools:context=".ui.admin.AdminQRScannerActivity">
+
+
+    <TextView
+        android:id="@+id/tvDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/epilogue_bold"
+        android:text="@string/dashboard"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/tvQRScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/tvDashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/btnAvatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/avatar_button"
+        android:text="@string/admin_initials"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/red"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvQRScanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/epilogue_bold"
+        android:text="@string/qr_scanner"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvInstructionText"
+        app:layout_constraintTop_toBottomOf="@id/tvDashboard" />
+
+
+    <TextView
+        android:id="@+id/tvInstructionText"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/scanner_instruction"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivQRScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQRScanner" />
+
+
+    <ImageView
+        android:id="@+id/ivQRScanner"
+        android:layout_width="180dp"
+        android:layout_height="176dp"
+        android:contentDescription="@string/qr_scanner"
+        android:src="@drawable/qr_scanner"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntryScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInstructionText" />
+
+    <Button
+        android:id="@+id/btnEntryScanner"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/entry_scanner"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnExitScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivQRScanner" />
+
+    <Button
+        android:id="@+id/btnExitScanner"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/lato_bold"
+        android:paddingStart="44dp"
+        android:paddingEnd="44dp"
+        android:text="@string/exit_scanner"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEntryScanner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
