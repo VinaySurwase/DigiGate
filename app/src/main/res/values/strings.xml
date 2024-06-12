@@ -24,6 +24,11 @@
     <string name="login_to_your_account">Login to your account</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="dashboard">Dashboard</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="scanner_instruction">Place camera in front of the QR code to scan</string>
+    <string name="entry_scanner">Entry Scanner</string>
+    <string name="exit_scanner">Exit Scanner</string>
+    <string name="admin_initials">A</string>
     <string name="your_qr_code">Your QR Code</string>
     <string name="qr_instruction">Place QR code inside the\n frame to scan</string>
     <string name="temp_name">Agrim Gupta</string>
