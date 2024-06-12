@@ -29,4 +29,17 @@
     <string name="entry_scanner">Entry Scanner</string>
     <string name="exit_scanner">Exit Scanner</string>
     <string name="admin_initials">A</string>
+    <string name="your_qr_code">Your QR Code</string>
+    <string name="qr_instruction">Place QR code inside the\n frame to scan</string>
+    <string name="temp_name">Agrim Gupta</string>
+    <string name="Name">Name</string>
+    <string name="roll_no">Roll No.</string>
+    <string name="temp_roll_no">22BCS016</string>
+    <string name="Hostel">Hostel</string>
+    <string name="temp_address">H-4,Vivekanand Hostel</string>
+    <string name="Room_no">Room No.</string>
+    <string name="temp_room_no">H-404</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="temp_no">9832308013</string>
+    <string name="qr_code">QR Code</string>
 </resources>
