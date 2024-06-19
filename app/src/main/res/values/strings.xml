@@ -31,6 +31,9 @@
     <string name="admin_initials">A</string>
     <string name="your_qr_code">Your QR Code</string>
     <string name="qr_instruction">Place QR code inside the\n frame to scan</string>
+    <string name="entry_data">Entry</string>
+    <string name="exit_data">Exit</string>
+    <string name="select_date">Select Date</string>
     <string name="temp_name">Agrim Gupta</string>
     <string name="Name">Name</string>
     <string name="roll_no">Roll No.</string>
@@ -42,4 +45,5 @@
     <string name="phone_no">Phone No.</string>
     <string name="temp_no">9832308013</string>
     <string name="qr_code">QR Code</string>
+
 </resources>
